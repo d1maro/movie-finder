@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick & Morty character finder with free API</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Find your favorite Rick & Morty character</h1>
+            <div class="form__input" action="#">
+                <label for="name">Name
+                    <input class="form__name" type="text" id="name" placeholder="Morty Smith">
+                </label>
+                <label for="property">Search by dead or alive
+                    <select class="form__property" id="property">
+                        <option value="Dead">Dead</option>
+                        <option value="Alive">Alive</option>
+                    </select>
+                </label>
+            </div>
+        </header>
+        <main class="main">
+            <div class="card"></div>
+        </main>
+    </div>
+    <script src="./script.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 224, 70, 1) 100%
+  );
+
+  font-family: "Silkscreen", monospace;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.form__input {
+  padding: 20px;
+  border: 1px solid #000000;
+  border-radius: 20px;
+}
+
+.form__name {
+  font-family: "Silkscreen", monospace;
+}
+
+.form__property {
+  font-family: "Silkscreen", monospace;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
