@@ -22,6 +22,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 50px;
 }
 
 h1 {
@@ -29,8 +30,13 @@ h1 {
   padding-bottom: 50px;
 }
 
+p {
+  max-width: 220px;
+}
+
 .container {
-  width: 1200px;
+  padding-bottom: 50px;
+  width: 1040px;
   margin: 0 auto;
 }
 
@@ -50,12 +56,17 @@ h1 {
 
 .main {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 10px;
+  row-gap: 20px;
+  column-gap: 20px;
 }
 
-.card {
+.insert__card {
   display: flex;
   flex-direction: column;
+  padding: 10px;
+  background-color: #e3dddb;
+  border: 1px solid #000000;
+  border-radius: 20px;
 }
