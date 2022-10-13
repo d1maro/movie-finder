@@ -16,6 +16,8 @@ body {
   );
 
   font-family: "Silkscreen", monospace;
+
+  cursor: url("./custom-cursor.png"), auto;
 }
 
 header {
