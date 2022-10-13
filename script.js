@@ -1,10 +1,15 @@
 "use strict";
 
-let url = "https://rickandmortyapi.com/api/character";
+let url = "https://rickandmortyapi.com/api/character/";
 
-let char = await fetch(url)
+let arr = [];
+for (let i = 1; i <= 826; i++) {
+  arr.push(i);
+}
+
+let char = await fetch(url + arr)
   .then((res) => res.json())
-  .then((char) => char.results);
+  .then((char) => char);
 
 const insert = document.querySelector(".main");
 
