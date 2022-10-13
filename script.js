@@ -61,7 +61,10 @@ function searchFilter() {
   let specie = select.value.toLowerCase();
   let filtered = char
     .filter((elem) => elem.name.toLowerCase().includes(pers))
-    .filter((elem) => elem.species.toLowerCase() == specie || specie == "all");
+    .filter(
+      (elem) => elem.species.toLowerCase() === specie || specie === "all"
+    );
   insert.innerHTML = "";
   filtered.forEach((elem) => insert.append(createCard(elem)));
+  input.value = "";
 }
