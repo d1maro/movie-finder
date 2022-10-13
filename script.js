@@ -9,10 +9,10 @@ let char = await fetch(url)
 const insert = document.querySelector(".main");
 
 const input = document.querySelector("input");
-// input.addEventListener("change", inputHandler);
+input.addEventListener("change", searchFilter);
 
 const select = document.querySelector("select");
-// select.addEventListener("change", inputHandler);
+select.addEventListener("change", searchFilter);
 
 function createCard(char) {
   const card = document.createElement("div");
@@ -55,3 +55,13 @@ function createCard(char) {
 char.forEach((elem) => {
   insert.append(createCard(elem));
 });
+
+function searchFilter() {
+  let pers = input.value.toLowerCase().trim();
+  let specie = select.value.toLowerCase();
+  let filtered = char
+    .filter((elem) => elem.name.toLowerCase().includes(pers))
+    .filter((elem) => elem.species.toLowerCase() == specie || specie == "all");
+  insert.innerHTML = "";
+  filtered.forEach((elem) => insert.append(createCard(elem)));
+}
